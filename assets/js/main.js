@@ -64,10 +64,33 @@
 
         // Fix: Placeholder polyfill.
         $('form').placeholder();
-        // $('form').on( 'submit', function( e ) {
-        //     e.preventDefault( );
-        //     alert( 'falta implementar');
-        // });
+        $('form').on( 'submit', function( e ) {
+            e.preventDefault( );
+
+            var name = $('#name').value( );
+            var email = $("#email").value( );
+            var message = $("#message").value( );
+
+            json = {"personalizations": [{"to": [{"email": "netoleal@gmail.com"}]}],"from": {"email": email},"subject": "Contato de " + name + " netoleal.photos", "content": [{"type": "text/plain", "value": message}]};
+
+            console.log( json );
+
+            $.ajax({
+                url: 'https://api.sendgrid.com/v3/mail/send',
+                headers: {
+                    'Authorization':'Bearer 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',
+                    'Content-Type':'application/json'
+                },
+                method: 'POST',
+                dataType: 'json',
+                data: json,
+                success: function(data){
+                  console.log('succes: '+data);
+                }
+              });
+
+            $('form').html( "<h3>Obrigado!</h3>" );
+        });
 
         // Panels.
         var $panels = $('.panel');
