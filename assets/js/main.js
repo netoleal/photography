@@ -67,9 +67,9 @@
         $('form').on( 'submit', function( e ) {
             e.preventDefault( );
 
-            var name = $('#name').value( );
-            var email = $("#email").value( );
-            var message = $("#message").value( );
+            var name = $('#name').val( );
+            var email = $("#email").val( );
+            var message = $("#message").val( );
 
             json = {"personalizations": [{"to": [{"email": "netoleal@gmail.com"}]}],"from": {"email": email},"subject": "Contato de " + name + " netoleal.photos", "content": [{"type": "text/plain", "value": message}]};
 
