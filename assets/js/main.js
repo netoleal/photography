@@ -64,10 +64,10 @@
 
         // Fix: Placeholder polyfill.
         $('form').placeholder();
-        $('form').on( 'submit', function( e ) {
-            e.preventDefault( );
-            alert( 'falta implementar');
-        });
+        // $('form').on( 'submit', function( e ) {
+        //     e.preventDefault( );
+        //     alert( 'falta implementar');
+        // });
 
         // Panels.
         var $panels = $('.panel');
