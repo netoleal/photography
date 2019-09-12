@@ -5,6 +5,9 @@ image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics: "UA-40563627-3"
 
+collections:
+  - albums
+
 # UI configs
 title: "Neto Leal | Fotografia"
 subtitle: "See the world through my eyes!"

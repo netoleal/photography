@@ -1,11 +1,12 @@
 ---
 layout: default
+parentDir: fulls
 ---
 
     <!-- Main -->
     <div id="main">
         {% for image in site.static_files %}
-        {% if image.path contains 'fulls' %}
+        {% if image.path contains page.parentDir %}
         <article class="thumb">
             <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
                 <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
