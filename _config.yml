@@ -1,5 +1,6 @@
 # Base configs
-baseurl: "https://netoleal.photos"
+#https://netoleal.photos
+baseurl: ""
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics: "UA-40563627-3"
@@ -8,7 +9,6 @@ google_analytics: "UA-40563627-3"
 title: "Neto Leal | Fotografia"
 subtitle: "See the world through my eyes!"
 author: "Neto Leal"
-sendgrid: "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"
 header:
  title: "Neto Leal"
  subtitle: "Arte e Fotografia"

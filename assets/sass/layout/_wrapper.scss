@@ -7,6 +7,11 @@
 /* Wrapper */
 
 	#wrapper {
+
+		.post {
+			padding: 20px;
+		}
+
 		@include vendor('transition', (
 			'-moz-filter #{_duration(panel)} ease',
 			'-webkit-filter #{_duration(panel)} ease',
