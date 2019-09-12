@@ -98,6 +98,10 @@
 			padding: _size(header) 0 0 0;
 		}
 
+		.site-subtitle {
+			display: none;
+		}
+
 		#header {
 			@include vendor('transform', 'translateY(0)');
 			bottom: auto;
