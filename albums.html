@@ -2,8 +2,15 @@
 layout: default
 ---
 
-<h1>Albums</h1>
-
-{% for album in site.albums %}
-<h2>{% album.title %}</h2>
-{% endfor %}
+<div id="main">
+    <h2>Albums</h2>
+        <nav>
+            <ul>
+                {% for post in site.posts %}
+                {% if post.category == 'album' %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+</div>

@@ -4,7 +4,9 @@
         <nav>
             <ul>
                 {% for post in site.posts %}
+                {% if post.category == 'menu' %}
                     <li><a href="{{ post.url }}" class="icon fa-camera-retro">{{ post.title }}</a></li>
+                {% endif %}
                 {% endfor %}
                 <li><a href="#footer" class="icon fa-info-circle">Sobre</a></li>
             </ul>
