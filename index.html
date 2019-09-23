@@ -9,9 +9,8 @@ parentDir: fulls
         {% if image.path contains page.parentDir %}
         <article class="thumb">
             <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt="" data-name="{{ image.name }}"/></a>
-            <!--<h2></h2>
-            <p></p>-->
+                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt="" data-name="{{ image.name }}"/>
+            </a>
         </article>
         {% endif %}
         {% endfor %}
